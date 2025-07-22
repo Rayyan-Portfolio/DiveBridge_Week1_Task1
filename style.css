@@ -1,0 +1,235 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #1a1a1a;
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+/* Navbar */
+nav {
+  background: #a5ff00;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10%;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.logo {
+  width: 100px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #111;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #333;
+  border-bottom: 2px solid #556b2f;
+}
+
+/* Mobile Nav */
+.mobile-menu-icon {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobile-menu-icon {
+    display: block;
+    font-size: 24px;
+    color: #000;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 65px;
+    left: 0;
+    background: #a5ff00;
+    width: 100%;
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .nav-links li a {
+    padding: 10px;
+    border-bottom: 1px solid #88cc00;
+  }
+
+  .nav-links li a:hover {
+    background: #111;
+    color: white;
+  }
+}
+
+/* Section Styles */
+section {
+  padding: 80px 10%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+section > * {
+  flex: 1 1 45%;
+  margin: 20px;
+}
+
+section img {
+  width: 100%;
+  border-radius: 10px;
+  max-width: 500px;
+}
+
+section p {
+  font-size: 18px;
+  text-align: center;
+  color: #ccc;
+}
+
+/* Personal Section */
+.personal {
+  background-color: #222;
+  flex-direction: column;
+  text-align: center;
+}
+
+.personal h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #a5ff00;
+}
+
+.personal p {
+  max-width: 800px;
+  font-size: 18px;
+}
+
+/* Contact Form */
+.Section-contact {
+  background: #1e1e1e;
+  flex-direction: column;
+  text-align: center;
+}
+
+.Contact-box h1 {
+  color: #a5ff00;
+  margin-bottom: 20px;
+}
+
+.input-field,
+.textarea-field {
+  width: 100%;
+  max-width: 500px;
+  padding: 12px 20px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  background: #333;
+  color: white;
+}
+
+.btn {
+  background: #a5ff00;
+  border: none;
+  padding: 12px 30px;
+  color: #111;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #89cc00;
+}
+
+/* Footer */
+footer {
+  background-color: #111;
+  padding: 40px 0 20px;
+  text-align: center;
+}
+
+.SocialIcons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.SocialIcons a {
+  margin: 0 10px;
+  background: #fff;
+  color: #111;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 1.5em;
+  transition: all 0.3s ease;
+}
+
+.SocialIcons a:hover {
+  background: #a5ff00;
+  color: #000;
+}
+
+.FooterBottom p {
+  color: #aaa;
+}
+
+.Designer {
+  font-weight: bold;
+  color: #a5ff00;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Divider */
+hr.solid {
+  border-top: 2px solid #a5ff00;
+  margin: 60px 10%;
+}
+
+/* Responsive Sections */
+@media (max-width: 768px) {
+  section {
+    flex-direction: column;
+    padding: 50px 5%;
+  }
+
+  section > * {
+    width: 100%;
+  }
+}
