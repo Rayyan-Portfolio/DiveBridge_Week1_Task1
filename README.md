@@ -17,7 +17,7 @@ This is a personal portfolio website created using **HTML and CSS**. The goal of
 
 ## 📁 Project Structure
 
-project-folder
+project-folder/
 
 │
 ├── index.html # Main HTML file with all sections
