@@ -16,9 +16,8 @@ This is a personal portfolio website created using **HTML and CSS**. The goal of
 ---
 
 ## 📁 Project Structure
-
+```
 project-folder/
-
 │
 ├── index.html # Main HTML file with all sections
 ├── assets/
@@ -31,7 +30,7 @@ project-folder/
 │ │ └── skills.jpg # Skills section image
 │ └── js/
 │ └── script.js # Optional JS for menu toggle
-
+```
 ---
 
 ## 📑 How I Used HTML
