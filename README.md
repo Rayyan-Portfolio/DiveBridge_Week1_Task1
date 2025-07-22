@@ -1,5 +1,7 @@
-# DiveBridge_Week1_Task1
-# Ahmad Rayyan – Portfolio Website
+# DiveBridge_Week1_Task1  
+## Ahmad Rayyan – Portfolio Website
+
+🔗 **Live Website**: [Visit Site](https://dive-bridge-week1-task1.vercel.app/)
 
 This is a personal portfolio website created using **HTML and CSS**. The goal of the website is to showcase my skills, background, personal interests, and contact information in a clean, structured, and responsive layout.
 
@@ -18,12 +20,16 @@ This is a personal portfolio website created using **HTML and CSS**. The goal of
 project-folder/
 │
 ├── index.html # Main HTML file with all sections
-├── style.css # External CSS for styling
-├── port1.png # Logo image
-├── pic1.jpg # Home section image
-├── pic2.png # About section image
-├── skills.jpg # Skills section image
-
+├── assets/
+│ ├── css/
+│ │ └── style.css # External CSS for styling
+│ ├── img/
+│ │ ├── port1.png # Logo image
+│ │ ├── pic1.jpg # Home section image
+│ │ ├── pic2.png # About section image
+│ │ └── skills.jpg # Skills section image
+│ └── js/
+│ └── script.js # Optional JS for menu toggle
 
 ---
 
@@ -32,72 +38,67 @@ project-folder/
 I used **HTML** to build the content and structure of the website across various semantic sections, ensuring that each part of the portfolio is clearly defined and easy to navigate:
 
 ### 1. **Header and Navigation**
-- Created using the `<header>` and `<nav>` tags.
-- Includes a logo (`port1.png`), horizontal menu with anchor links, and a mobile menu button.
-- The navigation links are anchored to internal section IDs for smooth scrolling.
+- Built using `<header>` and `<nav>`.
+- Contains a logo (`port1.png`), a horizontal menu for desktop, and a responsive mobile menu icon.
+- Menu items link to different sections using anchor tags and `id`s.
 
 ### 2. **Home Section**
-- Tag used: `<section class="Home" id="Home-page">`
-- Displays a welcome message with a brief introduction and a personal image (`pic1.jpg`).
-- Content is wrapped in two `<div>` blocks: one for text and one for the image, using a flexible layout.
+- Introduces the site and includes a personal photo (`pic1.jpg`) alongside a short bio.
+- Structured using a `<section>` tag and flexbox layout.
 
 ### 3. **Skills Section**
-- Tag used: `<section class="Skills" id="skills-page">`
-- Includes a paragraph describing technical competencies (HTML5, CSS3, JavaScript, UI/UX, server management).
-- A supporting graphic (`skills.jpg`) is displayed on the side.
+- Describes my core skills in HTML, CSS, JavaScript, UI/UX, and server management.
+- Includes a relevant image (`skills.jpg`) placed beside the text.
 
 ### 4. **About Section**
-- Tag used: `<section class="About" id="about-page">`
-- Describes my approach as a frontend developer, emphasis on clean code and responsive design.
-- Accompanied by a relevant image (`pic2.png`).
+- Offers more insight into my development approach, with focus on responsiveness and interactivity.
+- Styled with supporting image (`pic2.png`).
 
 ### 5. **Personal Statement Section**
-- Tag used: `<section class="personal" id="personal-page">`
-- A detailed paragraph reflecting my passion for computer science, career goals, and hobbies like photography.
-- No image to keep the focus on the text.
+- Contains a written reflection of my personal goals, interests, and inspiration behind pursuing tech.
+- Text-focused with centered layout for clarity and readability.
 
 ### 6. **Contact Section**
-- Tag used: `<section class="Section-contact" id="Contact-page">`
-- A functional contact form with:
-  - `<input>` fields for Name, Email, and Subject
-  - `<textarea>` for the message
-  - A submit `<button>` styled for interaction
-- Note: JavaScript is not connected to actually send the form data; the layout is visual and front-end only.
+- Includes a clean contact form with:
+  - Text inputs for name, email, and subject
+  - A message box using `<textarea>`
+  - A styled button for form submission
+- (Note: This is visual only—no form functionality yet.)
 
 ### 7. **Footer**
-- Contains social media links with icons powered by **Font Awesome**.
-- A copyright message.
-- Social links are wrapped in `<div class="SocialIcons">` and styled as circular icons.
+- Includes social media links styled with **Font Awesome** icons.
+- Simple copyright.
 
 ---
 
 ## 📱 Responsiveness
 
-HTML tags are used with proper structure and class names, making it easy to apply CSS Flexbox and media queries. This ensures that the layout adjusts gracefully on tablets and mobile devices.
-
-- The mobile navigation menu is triggered using a `<button>` with a hamburger icon from Font Awesome.
-- JavaScript is used briefly to toggle the visibility of nav links on smaller screens (optional and minimal).
+- The site is built using **flexbox** and **media queries** to ensure optimal viewing on all screen sizes.
+- The **mobile menu** toggles visibility using JavaScript.
+- Layouts and images scale effectively on phones, tablets, and desktops.
 
 ---
 
-## 🚀 How to Run the Project
+## 🚀 How to Run the Project Locally
 
-1. Clone or download the repository.
-2. Ensure all image files (`port1.png`, `pic1.jpg`, `pic2.png`, `skills.jpg`) are in the same directory.
-3. Open `index.html` in any web browser.
+1. Clone or download this repository.
+2. Make sure the image and CSS files are placed in their respective folders inside `/assets`.
+3. Open `index.html` with any modern web browser (Chrome, Firefox, Edge, etc.).
 
 ---
 
 ## ✨ Credits
 
-This website was designed and built by **Ahmad Rayyan** using pure HTML and CSS with a minimalist, user-friendly, and responsive approach.
+This project was designed and built by **Ahmad Rayyan** as part of DiveBridge Week 1 Task 1 using only HTML and CSS (with optional minimal JS).
 
 ---
 
 ## 📌 Future Enhancements
 
-- Add JavaScript functionality to handle form submissions.
-- Introduce a Projects section with image cards and modal views.
-- Add animations on scroll using CSS or animation libraries.
-- Connect to backend for live contact form.
+- Add JavaScript functionality to send messages via contact form.
+- Add a “Projects” section with image cards and modals.
+- Implement scroll animations using CSS or AOS library.
+- Integrate with a backend (Node.js or Firebase) for dynamic content.
+
+---
 
